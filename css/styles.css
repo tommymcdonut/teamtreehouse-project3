@@ -1,0 +1,50 @@
+/*----navigation layout----
+-------------------------*/
+.top {
+    width: 100%;
+}
+.topper {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 15px;
+    margin-top: auto;
+}
+
+.border {
+    display: inline-block;
+    border-bottom: double 5px #222;
+    width: 80%;
+    margin-left: 30px;
+}
+
+.signup {
+    color: #222;
+    text-align: center;
+}
+
+.grey {
+    text-align: center;
+    color: lightgrey;
+    opacity: .7;
+    padding: 5px 15px;
+}
+
+.daform {
+    margin-top: 
+    border-top: solid 2px #222;
+}
+
+.contact {
+    margin-left: 25px;
+}
+
+.name {
+    padding-left: 25px;
+    width: 60px;
+    
+}
+
+#name-label {
+    width: 200%;
+}
