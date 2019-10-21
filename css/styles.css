@@ -1,5 +1,9 @@
 /*----navigation layout----
 -------------------------*/
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .top {
     width: 100%;
 }
@@ -15,7 +19,14 @@
     display: inline-block;
     border-bottom: double 5px #222;
     width: 80%;
-    margin-left: 30px;
+    margin-left: 25px;
+    margin-top:25px;
+}
+
+.border2 {
+    margin-top: 20px;
+    background-color: black;
+    width: 80%;
 }
 
 .signup {
@@ -23,28 +34,133 @@
     text-align: center;
 }
 
+.info {
+    background-color: #222;
+    opacity: .5;
+}
+
 .grey {
     text-align: center;
-    color: lightgrey;
     opacity: .7;
     padding: 5px 15px;
 }
 
-.daform {
-    margin-top: 
-    border-top: solid 2px #222;
+p,
+.info,
+.format,
+.checks {
+    color: grey;
 }
 
 .contact {
-    margin-left: 25px;
+    margin-left: 20px;
+    color: black;
+    margin-bottom: 15px;
 }
 
-.name {
+.info {
+    border: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    transition: background-color 2s ease-out; 
+}
+
+.news {
+    display: flex;
+    flex-wrap: wrap;
     padding-left: 25px;
-    width: 60px;
-    
+    padding-top: 25px;
+    margin-top: 25px;
+    border: none;
 }
 
-#name-label {
-    width: 200%;
+.format,
+.checks {
+    border: none;
+}
+
+textarea {
+    background-color: lightgray;
+    border-radius: 5%;
+    height: 75px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgb(47, 206, 255);
+    border-radius: 5%;
+    margin-top: 20px;
+    margin-left: 5px;
+    width: 100%;
+    height: 40px;
+}
+
+.end {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+}
+
+/*pseudo elements---------------*/
+
+input[name*="user"],
+select {
+    display: block;
+    margin: 5px 10px 5px 20px;
+    background-color: lightgray;
+    border-radius: 5%;
+    height: 35px;
+    width: 80%;
+}
+
+label:nth-of-type(n) {
+    margin-left: 20px;
+}
+
+input:focus,
+select:focus {
+    border-color: darkblue;
+    outline: none;
+    background-color: orange;
+}
+
+/*--media queries--------------------*/
+
+@media (min-width: 767px) {
+    .formrow {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    .daform {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .border,
+    .border2 {
+        display: block;
+        margin-left: 120px;
+    }
+
+    label:nth-of-type(n) {
+        text-align: left;
+        margin: 0;
+    }
 }
