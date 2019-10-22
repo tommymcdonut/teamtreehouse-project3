@@ -35,7 +35,7 @@ body {
 }
 
 .info {
-    background-color: #222;
+    background-color: darkmagenta;
     opacity: .5;
 }
 
@@ -54,6 +54,7 @@ p,
 
 .contact {
     margin-left: 20px;
+    margin-top: 20px;
     color: black;
     margin-bottom: 15px;
 }
@@ -68,7 +69,7 @@ ul,
 li {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 10px 0;
 }
 
 input {
@@ -89,9 +90,14 @@ input {
     border: none;
 }
 
+.text {
+    margin-top: 15px;
+}
+
 textarea {
     background-color: lightgray;
     border-radius: 5%;
+    margin-top: 15px;
     height: 75px;
     width: 100%;
     border: none;
@@ -141,7 +147,7 @@ select:focus {
 
 /*--media queries--------------------*/
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
     .formrow {
         display: flex;
         justify-content: flex-end;
@@ -155,8 +161,9 @@ select:focus {
 
     .border,
     .border2 {
-        display: block;
-        margin-left: 120px;
+        display: flex;
+        justify-content: center;
+        margin: auto;
     }
 
     label:nth-of-type(n) {
