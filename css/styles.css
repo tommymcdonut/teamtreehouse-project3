@@ -155,11 +155,6 @@ select:focus {
         align-items: center;
     }
 
-    /*input {
-        display: flex;
-        justify-content: space-evenly;
-    }*/
-
     .daform {
         display: flex;
         flex-direction: column;
